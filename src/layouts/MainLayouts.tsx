@@ -1,9 +1,8 @@
 import React from 'react'
-
 const MainLayouts = () => {
   return (
     <div>
-      ffffffffffffffffffff
+      adhammmmmmmmmmmmmmm shoma
     </div>
   )
 }
