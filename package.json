@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
@@ -31,7 +32,8 @@
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "npm:rolldown-vite@7.2.5"
+    "vite": "npm:rolldown-vite@7.2.5",
+    "vite-plugin-svgr": "^4.5.0"
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
