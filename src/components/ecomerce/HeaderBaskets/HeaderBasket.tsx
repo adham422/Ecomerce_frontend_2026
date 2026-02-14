@@ -1,5 +1,4 @@
 import Logo from "../../../assets/svg/cart.svg";
-
 import styles from "./style.module.css";
 const { basketContainer, basketQuantity } = styles;
 
