@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "../pages/Home";
 import Categories from "../pages/Categories";
-import Product from "../pages/Product";
+import Product from "../pages/Products";
 import AboutUs from "../pages/AboutUs";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPages from "../pages/ErrorPages";
