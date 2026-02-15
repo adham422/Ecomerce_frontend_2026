@@ -1,6 +1,7 @@
 import { Badge, Container, Nav, Navbar } from 'react-bootstrap'
 import styles from "./style.module.css";
 import HeaderBasket from '../../ecomerce/HeaderBaskets/HeaderBasket';
+import { NavLink } from 'react-router-dom';
 
 const {headerContainer , headerLogo} = styles;
 const Header = () => {
@@ -19,18 +20,18 @@ const Header = () => {
 
 
                 <Container>
-                    <Navbar.Brand href="/">ADHAM</Navbar.Brand>
+                    {/* <Navbar.Brand as={NavLink} to="/">ADHAM</Navbar.Brand> */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/Categories">Categories</Nav.Link>
-                            <Nav.Link href="/product">Products</Nav.Link>
-                            <Nav.Link href="/about-us">About us</Nav.Link>
+                            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+                            <Nav.Link as={NavLink} to="/Categories">Categories</Nav.Link>
+                            <Nav.Link as={NavLink} to="/products">Products</Nav.Link>
+                            <Nav.Link as={NavLink} to="/about-us">About us</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="login">Log in</Nav.Link>
-                            <Nav.Link href="/register">Register</Nav.Link>
+                            <Nav.Link as={NavLink} to="login">Log in</Nav.Link>
+                            <Nav.Link as={NavLink} to="/register">Register</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
