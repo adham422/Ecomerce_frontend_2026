@@ -25,6 +25,16 @@ const router = createBrowserRouter([
       {
         path: "products/:prefix",
         element: <Product />,
+        loader: ({ params }) => {
+          // تحقق من صحة الكلمة: أحرف فقط
+          if (!/^[a-z]+$/i.test(params.prefix)) {
+            throw new Response("Category not found", {
+              status: 400,
+              statusText: "Bad Request",
+            });
+          }
+          return true;
+        },
       },
       {
         path: "login",
@@ -42,9 +52,7 @@ const router = createBrowserRouter([
   },
 ]);
 const AppRouter = () => {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default AppRouter;
