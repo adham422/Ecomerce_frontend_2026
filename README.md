@@ -7,3 +7,8 @@
 # to open server for server backend 
    npm start
   
+  npm run dev
+
+  
+# to open server for server backend 
+  npm start
