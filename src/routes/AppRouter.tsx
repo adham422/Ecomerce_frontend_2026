@@ -10,7 +10,7 @@ import Register from "../pages/Register";
 import MainLayouts from "../layouts/MainLayouts";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/", 
     element: <MainLayouts />,
     children: [
       {

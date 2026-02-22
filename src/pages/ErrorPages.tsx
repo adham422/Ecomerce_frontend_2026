@@ -19,7 +19,7 @@ const ErrorPages = () => {
               </Button>
             </div>
           </Alert>
-        </Col>
+        </Col> 
       </Row>
     </Container>
   )
