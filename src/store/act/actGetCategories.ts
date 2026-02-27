@@ -20,5 +20,4 @@ const actGetCategories = createAsyncThunk(
     }
   }              
 );
-
 export default actGetCategories;
