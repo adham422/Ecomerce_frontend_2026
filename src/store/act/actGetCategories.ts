@@ -1,8 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
 const API_URL = "http://localhost:5001/categories"; // from folder backend run (bacend folder)
-
 const actGetCategories = createAsyncThunk(
   "categories/actGetCategories",
   async (_, { rejectWithValue }) => {
