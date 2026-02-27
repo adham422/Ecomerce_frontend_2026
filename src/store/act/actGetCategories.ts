@@ -18,7 +18,7 @@ const actGetCategories = createAsyncThunk(
             return rejectWithValue("An unexpected error occurred");
         }        
     }
-  }             
+  }              
 );
 
 export default actGetCategories;
